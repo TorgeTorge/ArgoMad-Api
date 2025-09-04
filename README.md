@@ -1,4 +1,4 @@
-Questo progetto fornisce un'API "ponte" costruita con FastAPI per automatizzare la ricerca di interpelli
+Semplice progetto per fornire un'API "ponte" costruita con FastAPI per automatizzare la ricerca di interpelli
 
 
 ⚙️ Installazione e Configurazione
@@ -12,6 +12,8 @@ Assicurati di avere installato quanto segue:
     fastapi
     bs4
     uvicorn
+    pydantic
+    requests
 
 2. Configurazione del Progetto
 
@@ -26,7 +28,7 @@ Assicurati di avere installato quanto segue:
 
     Installa le dipendenze:
 
-    pip install -r requirements.txt
+    pip install -r requirements.txt(prima o poi creo il file)
 
     Configura il percorso di Geckodriver 
 
@@ -38,7 +40,7 @@ uvicorn main:app --reload
 
 Il server sarà accessibile all'indirizzo http://127.0.0.1:8000.
 📖 Uso dell'API
-Endpoint Principali
+Endpoint:
 1. Ricerca Interpelli Argo
 
     URL: /api/search
@@ -87,8 +89,3 @@ rest:
         value_template: "{{ value_json.data | count }}"
         json_attributes:
           - "data"
-
-
-📜 Licenza
-
-Questo progetto è distribuito sotto la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
