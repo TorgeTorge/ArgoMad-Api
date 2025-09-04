@@ -53,8 +53,6 @@ def scrape_argo_live(query: SearchQuery):
     firefox_options.add_argument("--headless")
 
     try:
-        # --- MODIFICA: Aggiunto l'uso esplicito del Service per geckodriver ---
-        # 1. Definisci il percorso dove si trova geckodriver.
         #    Esegui 'which geckodriver' nel terminale per trovare il percorso corretto.
         geckodriver_path = "/usr/local/bin/geckodriver" # <-- SOSTITUISCI CON IL TUO PERCORSO SE DIVERSO!
 
@@ -63,7 +61,6 @@ def scrape_argo_live(query: SearchQuery):
 
         # 3. Inizializza il driver passando l'oggetto service.
         driver = webdriver.Firefox(service=service, options=firefox_options)
-        # --- FINE MODIFICA ---
 
     except Exception as e
         print(f"Errore inizializzazione Selenium per Firefox: {e}")
