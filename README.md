@@ -1,4 +1,4 @@
-Semplice progetto per fornire un'API "ponte" costruita con FastAPI per automatizzare la ricerca di interpelli
+Semplice progetto per fornire un'API "ponte" costruita con FastAPI per automatizzare la ricerca di interpelli con un index utilizzato da me principalmente per il debug
 
 
 ⚙️ Installazione e Configurazione
